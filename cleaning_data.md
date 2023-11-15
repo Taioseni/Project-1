@@ -10,6 +10,7 @@ What issues will you address by cleaning the data?
 Queries:
 Below, provide the SQL queries you used to clean your data.
 
+```
 UPDATE all_sessions
 SET city = null
 WHERE city = '(not set)' OR city = 'not available in demo dataset'
@@ -19,3 +20,4 @@ SET unit_price = unit_price/1000000
 
 UPDATE analytics
 SET unit_price = ROUND(unit_price, 2)
+```
